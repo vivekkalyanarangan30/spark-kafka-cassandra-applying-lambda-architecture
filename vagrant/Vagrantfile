@@ -64,7 +64,7 @@ Vagrant.configure("2") do |config|
 
   config.vm.box = "aalkilani/spark-kafka-cassandra-applying-lambda-architecture"
 
-  config.vm.hostname = "lambda-pluralsight"
+  config.vm.hostname = "unp-bigdata"
 
   config.vm.provision "docker-images", type: "shell", run: "always", inline: <<-SHELLPRE
     docker restart zookeeper
